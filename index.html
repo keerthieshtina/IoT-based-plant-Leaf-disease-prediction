@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leaf Disease Prediction</title>
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+<div class="container">
+<h1>IoT Based Leaf Disease Prediction</h1>
+<form action="/predict" method="POST">
+<label>Leaf Spot Size</label>
+<input type="number"
+step="0.01"
+name="leafspot"
+required>
+<label>Humidity</label>
+<input type="number"
+step="0.01"
+name="humidity"
+required>
+<label>Temperature</label>
+<input type="number"
+step="0.01"
+name="temperature"
+required>
+<button type="submit">
+Predict
+</button>
+</form>
+</div>
+</body>
+</html>
